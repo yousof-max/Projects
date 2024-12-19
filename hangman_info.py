@@ -1,13 +1,31 @@
-words = ("Apple", "Banana", "Orange", "Grape", "Lemon", "Mango", "Peach", "Pear", "Plum", "Berry",
-"House", "Chair", "Table", "Door", "Window", "Shelf", "Floor", "Roof", "Light", "Couch",
-"Tiger", "Lion", "Bear", "Horse", "Cow", "Sheep", "Goat", "Pig", "Duck", "Rabbit",
-"Train", "Truck", "Plane", "Ship", "Car", "Bus", "Bike", "Boat", "Taxi", "Subway",
-"Green", "Black", "White", "Brown", "Purple", "Yellow", "Orange", "Blue", "Pink", "Red",
-"Water", "Earth", "Fire", "Wind", "Cloud", "Stone", "Grass", "River", "Mountain", "Ocean",
-"Apple", "Clock", "Brush", "Glove", "Plate", "Knife", "Fork", "Broom", "Shirt", "Pants",
-"Mouse", "Panda", "Snake", "Frog", "Shark", "Whale", "Eagle", "Zebra", "Llama", "Koala",
-"Happy", "Funny", "Quiet", "Lucky", "Quick", "Brave", "Smart", "Kind", "Fast", "Small",
-"Pizza", "Bread", "Cheese", "Toast", "Cereal", "Bacon", "Pasta", "Candy", "Cookie", "Donut")
+import random
+
+animals = ("Elephant", "Giraffe", "Kangaroo", "Cheetah", "Penguin", "Rhinoceros", "Flamingo", "Crocodile", "Hippopotamus", "Octopus",
+"Panther", "Chimpanzee", "Ostrich", "Porcupine", "Squirrel", "Walrus", "Seahorse", "Armadillo", "Peacock", "Raccoon")
+vehicles = ("Motorcycle", "Helicopter", "Ambulance", "Bulldozer", "Firetruck", "HotAirBalloon", "Hovercraft", "Limousine", "Snowmobile", "Submarine",
+"Spaceship", "Tractor", "Convertible", "Scooter", "JetSki", "CableCar", "Biplane", "Minivan", "PickupTruck", "Tanker")
+fruits = ("Strawberry", "Blueberry", "Blackberry", "Pineapple", "Watermelon", "Papaya", "Cantaloupe", "Dragonfruit", "Pomegranate", "Kiwi",
+"Raspberry", "Coconut", "Avocado", "Guava", "Lychee", "Passionfruit", "Durian", "Mulberry", "Fig", "Tamarind")
+all_words = (
+    # Animals
+    "Elephant", "Giraffe", "Kangaroo", "Cheetah", "Penguin", "Rhinoceros", "Flamingo", "Crocodile",
+    "Hippopotamus", "Octopus", "Panther", "Chimpanzee", "Ostrich", "Porcupine", "Squirrel",
+    "Walrus", "Seahorse", "Armadillo", "Peacock", "Raccoon",
+
+    # Vehicles
+    "Motorcycle", "Helicopter", "Ambulance", "Bulldozer", "Firetruck", "HotAirBalloon", "Hovercraft",
+    "Limousine", "Snowmobile", "Submarine", "Spaceship", "Tractor", "Convertible", "Scooter",
+    "JetSki", "CableCar", "Biplane", "Minivan", "PickupTruck", "Tanker",
+
+    # Fruits
+    "Strawberry", "Blueberry", "Blackberry", "Pineapple", "Watermelon", "Papaya", "Cantaloupe",
+    "Dragonfruit", "Pomegranate", "Kiwi", "Raspberry", "Coconut", "Avocado", "Guava", "Lychee",
+    "Passionfruit", "Durian", "Mulberry", "Fig", "Tamarind"
+)
+
+random_words = (animals, vehicles, fruits)
+
+random = random.choice(random_words)
 
 hangman_art = {0: (" | ",
                    "   ",
